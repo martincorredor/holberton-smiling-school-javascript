@@ -1,0 +1,654 @@
+/* SUMMARY
+1. GLOBAL
+2. SECTIONS
+3. RESPONSIVE
+*/
+
+/*** 1. GLOBAL ***/
+
+/* Variables
+			============================= */
+:root {
+  /* Colors */
+  --background-black: #071629;
+  --color-primary: #c271ff;
+  --color-check: #82d24f;
+  --text-card-color: rgba(7, 22, 41, 0.501584);
+
+  /*Fonts*/
+  --font-Source: 'Source Sans Pro', sans-serif;
+  --font-Coiny: 'Coiny', cursive;
+  --font-size-12px: 1.2rem;
+  --font-size-14px: 1.4rem;
+  --font-size-16px: 1.6rem;
+  --font-size-18px: 1.8rem;
+  --font-size-22px: 2.2rem;
+  --font-size-24px: 2.4rem;
+}
+
+/* Base
+                                ============================= */
+
+html {
+  scroll-behavior: smooth;
+  font-size: 10px;
+  /* For rem */
+}
+
+body {
+  font-family: var(--font-Source) !important;
+}
+
+a:hover {
+  color: var(--color-primary) !important;
+}
+
+h1 {
+  font-size: 61px !important;
+  line-height: 76px !important;
+}
+
+h2 {
+  font-size: 3.2rem !important;
+  line-height: 4rem !important;
+}
+
+.btn {
+  width: 162px;
+  height: 44px;
+  background-color: var(--color-primary) !important;
+  border-color: var(--color-primary) !important;
+  font-weight: 600 !important;
+  font-size: var(--font-size-14px) !important;
+  filter: drop-shadow(0px 2px 20px rgba(0, 0, 0, 0.5));
+}
+
+.btn:hover,
+.btn:active {
+  opacity: 0.9;
+}
+
+/*** 2. SECTIONS ***/
+
+/* Header
+                        ============================= */
+
+.header {
+  width: 100%;
+  height: auto;
+  background-color: var(--background-black);
+  background-position-x: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.navbar-line,
+.navbar-lines {
+  display: block;
+  height: 2px;
+  background-color: var(--navbar-line-color);
+  border-radius: 2px;
+}
+
+.navbar-line {
+  width: 13px;
+}
+
+.line-1 {
+  width: 18px;
+}
+
+.line-3 {
+  width: 20px;
+}
+
+.nav-link {
+  font-size: var(--font-size-12px);
+  line-height: 1.5rem;
+}
+
+/** Homepage **/
+
+.header-homepage {
+  padding-bottom: 96px;
+  background-image: url('images/pic_1.jpg');
+}
+
+/** Pricing **/
+
+.header-pricing {
+  background-image: url('images/pic_2.jpg');
+  padding-bottom: 89px;
+}
+
+/** Courses **/
+
+.header-courses {
+  background-image: url('images/pic_3.jpg');
+}
+
+/* Section Hero
+                        ============================= */
+
+.section-hero {
+  height: auto;
+  margin-top: 176px;
+}
+
+/** Homepage **/
+
+.list-group-item {
+  font-size: var(--font-size-16px);
+  line-height: 2rem;
+}
+
+.section-hero_subtitle {
+  margin-top: 150px;
+  margin-bottom: 87px;
+}
+
+.section-hero_subtitle-span {
+  color: var(--color-primary);
+}
+
+.section-hero_pros-name {
+  font-size: var(--font-size-18px);
+  font-weight: 900;
+  line-height: 2.7rem;
+}
+
+.section-hero_pros-description {
+  width: 150px;
+  font-size: var(--font-size-16px);
+  line-height: 2.4rem;
+}
+
+/** Pricing **/
+
+.section-hero_question {
+  width: 289px;
+  margin-bottom: 50px;
+  font-size: var(--font-size-24px);
+  line-height: 30px;
+}
+
+.section-hero-price_p-month {
+  opacity: 0.5;
+  font-size: var(--font-size-12px);
+  line-height: 15px;
+}
+
+.section-hero-price_table {
+  margin-top: 50px;
+  font-size: 18px;
+  line-height: 34px;
+}
+
+.section-hero-price_table-td {
+  border-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+.section-hero-price_table-span {
+  font-size: 28px;
+  color: var(--color-check);
+}
+
+.section-hero-price_table-head2 {
+  font-size: 12px;
+  line-height: 15px;
+}
+
+/** Courses **/
+
+.section-hero-courses {
+  margin-top: 35px;
+  padding-bottom: 25px;
+}
+
+.section-hero-courses_title {
+  max-width: 480px;
+  font-size: 32px !important;
+  line-height: 35px !important;
+  font-family: var(--font-Coiny);
+}
+
+.section-hero-courses_title_span {
+  color: var(--color-primary);
+}
+
+/* Section Carousel
+                        ============================= */
+
+.section-carousel {
+  width: auto;
+  height: auto;
+  padding-top: 68px;
+  padding-bottom: 103px;
+  background-color: var(--color-primary);
+}
+
+.section-carousel_img {
+  width: 140px;
+  height: 140px;
+}
+
+.section-carousel_text {
+  width: 346px;
+  height: auto;
+}
+
+.section-carousel_testimonial,
+.section-carousel_person-name,
+.section-carousel_person-name_description {
+  font-size: var(--font-size-22px);
+  line-height: 34px;
+}
+
+.section-carousel_person-name {
+  margin-top: 22px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  height: 140px;
+  width: 29px !important;
+}
+
+/* Section Popular
+                        ============================= */
+
+.section-popular {
+  width: auto;
+  height: 624px;
+  padding-top: 87px;
+}
+
+.section-popular h2 {
+  color: var(--background-black);
+}
+
+.section-popular_carousel {
+  margin-top: 75px;
+}
+
+.section-popular_carousel_card {
+  width: 255px;
+  height: 335px;
+}
+
+.card_img-play {
+  top: 45px;
+  left: 96px;
+}
+
+.card-title {
+  color: var(--background-black);
+  font-size: var(--font-size-16px);
+  line-height: 20px;
+}
+
+.card-text {
+  color: var(--text-card-color);
+  font-size: var(--font-size-14px);
+  line-height: 24px;
+}
+
+.card-name {
+  color: var(--color-primary);
+  font-size: var(--font-size-14px);
+  font-weight: 600;
+  line-height: 27px;
+}
+
+/* Section Free
+                        ============================= */
+
+.section-free {
+  width: 100%;
+  height: auto;
+  background-color: var(--background-black);
+  padding-top: 75px;
+  padding-bottom: 89px;
+}
+
+.section-free_grid {
+  margin-top: 50px;
+}
+
+.dot {
+  margin-bottom: 50px;
+}
+
+.dot-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.dot-description {
+  width: 221px;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+/* Section F.A.Q
+                        ============================= */
+
+.section-faq {
+  width: 100%;
+  height: auto;
+  margin-top: 74px;
+}
+
+.section-faq_title {
+  font-size: 60px !important;
+  line-height: 75px !important;
+}
+
+.section-faq_grid {
+  margin: 74px 0 108px 0;
+}
+
+.section-faq_grid_card {
+  width: 340px;
+  height: 242px;
+  margin-bottom: 146px;
+}
+
+/* Section Search
+                        ============================= */
+
+.section-search {
+  width: 100%;
+  height: auto;
+  background-color: var(--color-primary);
+}
+
+.section-search_form {
+  padding-top: 23px;
+}
+
+.section-search_form_label {
+  font-size: var(--font-size-12px);
+  line-height: 15px;
+}
+
+.section-search_form_input {
+  height: 51px !important;
+  background-color: #d195ff !important;
+  border-radius: 0 !important;
+  font-size: 23px !important;
+  line-height: 29px !important;
+}
+
+.section-search_form input {
+  padding-left: 42px;
+}
+
+.section-search_form input::placeholder {
+  color: #ffffff;
+}
+
+.search-icon {
+  font-size: 20px;
+}
+
+.section-search_form select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+}
+
+.arrow-icon {
+  font-size: 13px;
+  margin: 20px;
+  right: 22px;
+}
+
+/* Section videos
+                        ============================= */
+
+.section-videos {
+  width: auto;
+  height: auto;
+  padding-bottom: 75px;
+}
+
+.section-videos_span {
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba(7, 22, 41, 0.3);
+}
+
+.section-videos_grid_card {
+  width: 345px !important;
+  height: 335px !important;
+}
+
+/* Footer
+                        ============================= */
+
+.footer {
+  width: 100%;
+  height: auto;
+  background-color: var(--background-black);
+  padding: 50px 0 34px 0;
+}
+
+.footer_icons {
+  font-size: 30px;
+  margin: 45px 0;
+}
+
+.footer .span {
+  opacity: 0.35;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+/*** 3. RESPONSIVE ***/
+
+/* Small ≥576px
+                        ============================= */
+
+@media (min-width: 576px) {
+  /*** 2. SECTIONS ***/
+
+  /* Section Hero
+                        ============================= */
+
+  /** Price **/
+
+  .section-hero-price {
+    margin-top: 240px;
+  }
+
+  /** Courses **/
+
+  .section-hero-courses {
+    padding-bottom: 50px;
+  }
+}
+
+/* Medium ≥768px
+                        ============================= */
+
+@media (min-width: 768px) {
+  /*** 1. GLOBAL ***/
+
+  /* Base
+                        ============================= */
+
+  h1 {
+    font-size: 120px !important;
+    line-height: 150px !important;
+  }
+
+  /*** 2. SECTIONS ***/
+
+  /* Section Hero
+                        ============================= */
+
+  /** Homepage **/
+
+  .section-hero_subtitle {
+    margin-top: 168px;
+  }
+
+  /** Price **/
+
+  .section-hero-price {
+    margin-top: 196px;
+  }
+
+  .section-hero_question {
+    width: 385px;
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .smile {
+    width: 37px;
+    height: 30px;
+  }
+
+  .smileschool {
+    width: 200px;
+  }
+
+  /* Section Carousel
+                        ============================= */
+
+  .div-slide {
+    width: 552px;
+  }
+
+  .section-carousel_img {
+    width: 148px;
+    height: 148px;
+  }
+
+  .section-carousel_text {
+    width: 370px;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    height: 246px;
+  }
+
+  /* Section Free
+                        ============================= */
+
+  .section-free {
+    padding-bottom: 62px;
+  }
+
+  .section-free_grid {
+    margin-top: 58px;
+  }
+
+  .dot {
+    margin-bottom: 52px;
+  }
+
+  /* Section F.A.Q
+                        ============================= */
+
+  .section-faq_grid {
+    margin-bottom: 110px;
+  }
+
+  .section-faq_grid_card {
+    width: 270px;
+    height: 314px;
+    margin-bottom: 74px;
+  }
+
+  /* Section videos
+                        ============================= */
+
+  .section-videos_grid_card {
+    width: 210px !important;
+    height: 335px !important;
+  }
+}
+
+/* Large ≥992px
+                        ============================= */
+
+@media (min-width: 992px) {
+  /*** 2. SECTIONS ***/
+
+  /* Section Carousel
+                        ============================= */
+  .section-carousel_img {
+    width: 160px;
+    height: 160px;
+  }
+
+  .div-slide {
+    width: 852px;
+  }
+
+  .section-carousel_text {
+    width: 650px;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    height: 178px;
+  }
+
+  /* Section Free
+                        ============================= */
+
+  .section-free {
+    padding-bottom: 52px;
+  }
+
+  /* Section F.A.Q
+                        ============================= */
+
+  .section-faq_grid {
+    margin-bottom: 127px;
+  }
+
+  .section-faq_grid_card {
+    width: 350px;
+    height: 242px;
+  }
+
+  /* Section videos
+                        ============================= */
+
+  .section-videos_grid_card {
+    width: 255px !important;
+    height: 335px !important;
+  }
+}
+
+/* Extra large ≥1200px
+                        ============================= */
+
+@media (min-width: 1200px) {
+  /*** 2. SECTIONS ***/
+
+  /* Section Carousel
+                        ============================= */
+  .div-slide {
+    width: 943px;
+  }
+
+  .section-carousel_text {
+    width: 730px;
+  }
+
+  /* Section Popular
+                        ============================= */
+
+  .carousel-iner {
+    max-width: 90%;
+  }
+}
